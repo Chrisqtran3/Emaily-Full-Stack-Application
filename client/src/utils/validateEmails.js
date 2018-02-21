@@ -8,7 +8,6 @@ export default emails => {
     .filter(email => re.test(email) === false);
 
   if (invalidEmails.length) {
-    console.log('Invalid: ', invalidEmails);
     return `These emails are invalid: ${invalidEmails}`;
   }
 
